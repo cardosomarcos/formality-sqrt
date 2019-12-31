@@ -1,0 +1,17 @@
+// Square root recursive
+sqrt_recursive(n : Number, i : Number, z : Number) : Number
+  if i .<. 1 then
+    z
+  else
+    let new_z = z .-. ((z .**. 2) .-. n) ./. ( 2 .*. z)
+    let new_i = i .-. 1
+    sqrt_recursive(n, new_i, new_z)
+
+// Square root using loop
+// TODO
+
+// How to define constant?
+sqrt(n : Number) : Number
+  let cons_i = 1 // Define number of iterations
+  let cons_z = 1 // Default value of z
+  sqrt_recursive(n, 10, 1)
