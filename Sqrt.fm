@@ -12,6 +12,6 @@ sqrt_recursive(n : Number, i : Number, z : Number) : Number
 
 // How to define constant?
 sqrt(n : Number) : Number
-  let cons_i = 1 // Define number of iterations
+  let cons_i = 10 // Define number of iterations
   let cons_z = 1 // Default value of z
-  sqrt_recursive(n, 10, 1)
+  sqrt_recursive(n, cons_i, cons_z)
